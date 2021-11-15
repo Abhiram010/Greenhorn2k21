@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('redf.jpg');
+background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+form{
+    margin: 10px;
+    border-radius: 8px;
+    
+}
+.int{
+    border-bottom: solid 1px grey;
+}
+.jform{
+width: max-content;
+
+
+}
+#othertext::placeholder{
+    font-size: 1rem;
+    
+}
+.commonbold{
+    font-weight: bolder;
+}
+.intro{
+    border-top: solid 1px grey;
+}
+.intro p{
+    font-size: 1rem;
+    text-justify: distribute-all-lines;
+    margin-top: 10px;
+}
+.intro h1{
+    text-align: center;
+    text-justify: distribute-all-lines;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.element{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 0rem;
+    box-shadow: 1px 1px 3px rgb(10, 10, 10) ,1px 1px 3px rgb(10, 10, 10) ;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-left: solid 1px rgb(153, 152, 152);
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1.5;
+    padding: 1rem 2rem;    
+    outline: none;
+    box-shadow: 10px 10px 10px grey;
+     
+}
+.otherbox input{
+    width: min-content;
+}
+.element input::text{
+    color: violet;
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .modal {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);  
+    }
+    .warning {
+      display: none;
+    }
+  }
+.element input{
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px rgb(151, 55, 219);
+    width: min-content;
+    outline: none;
+    padding: 5px;
+}
+.element label{
+    color:rgb(32,32,32);
+    font-weight: lighter;
+}
+input[type="radio"]::after{
+    width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+}
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(151, 55, 219);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+input[type="checkbox"]::after{
+    width: 15px;
+        height: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+}
+input[type='checkbox']:checked:after {
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(151, 55, 219);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+button{
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+    width: min-content;
+    background: rgb(151, 55, 219);
+    color: white;
+}
+.buttons{
+    background: none;
+padding: 0;
+border-left: none;
+box-shadow: none;
+}
+.interest{
+    display: flex;
+    flex-direction: column;
+}
+.int span label {
+    margin: 5px;
+}
+.all{
+    display: flex;
+    flex-wrap: wrap;
+}
+.preview{
+    display: flex;
+    border: solid;
+    width: 100%;
+    height: min-content;
+    margin: 2rem;
+}
+@media only screen and (min-width:768px) {
+    .element{
+        width: 40%;
+    }
+    .jform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
