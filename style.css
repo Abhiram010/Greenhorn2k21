@@ -1,0 +1,254 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+  background-color: lightblue;
+  background-color: #ff9d00;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    margin:5rem 15px;
+    align-items: center;
+  }
+  .top div{
+    margin: 1rem;
+  }
+  .right{
+    height: 5rem;
+    width: 9rem;
+    border-radius: 15rem 15rem 0rem 0rem;
+    background-color: #FFE243;
+    animation: trans;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+  }
+  .left{
+    height: 5rem;
+    width:5rem;
+    background-color: rgb(235, 39, 39);
+    border-radius: 2rem;
+    animation: moveleft,circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    clip-path: circle(75%);
+  transition: clip-path 1s;
+  }
+  .left:hover{
+    clip-path: circle(25%);
+  }
+  .left2{
+    height: 5rem;
+    width:5rem;
+    background-color: rgb(235, 39, 39);
+    animation: shake,rotate reverse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .left3{
+    height: 5rem;
+    width:5rem;
+    background-color: rgb(39, 222, 235);
+    border-radius: 2rem;
+    animation: moveleft,circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    clip-path: circle(75%);
+  transition: clip-path 1s;
+  }
+  .left4{
+    height: 5rem;
+    width: 9rem;
+    border-radius: 0rem 0rem 15rem 15rem;
+    background-color: #FF3733;
+    animation: trans;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #C2413B;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #cf6f6a;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #C2413B;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+@keyframes trans {
+  0%{
+    transform: rotate(45deg);
+    background-color: #FF3733;
+
+  }
+  50%{
+    transform: rotate(-45deg);
+  }
+  100%{
+    transform: rotate(45deg);
+    
+  }
+}
+@keyframes moveleft {
+0%{
+    transform: rotate(180deg);
+    background-color: royalblue;
+  }
+  50%{
+    transform: rotate(0deg);
+    background-color: #FF3733;
+  }
+  100%{
+    transform: rotate(180deg);
+    background-color: rgb(16, 13, 219);
+  }
+}
+@keyframes shake {
+  from{
+  transform: rotate(0deg);  
+    background-color:#0F58F2;
+
+  }
+  to{
+   transform: rotate(180deg);
+   background-color: #FFE243;
+
+  }
+}
+@keyframes circle {
+  0% { clip-path: circle(75%); }
+  100% { clip-path: circle(25%); }
+}
+@keyframes rotate {
+  0% { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); }
+  25% { clip-path: polygon(87.5% 12.5%, 87.5% 87.5%, 12.5% 87.5%, 12.5% 12.5%); }
+  50% { clip-path: polygon(75% 75%, 25% 75%, 25% 25%, 75% 25%); }
+  75% { clip-path: polygon(37.5% 62.5%, 37.5% 37.5%, 62.5% 37.5%, 62.5% 62.5%); }
+  100% { clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); }
+}
+
+@media only screen and (max-width:500px) {
+  .right,.left4{
+    height: 1.8rem;
+    width:1rem;
+  }
+  .left,.left2,.left3{
+height: 2rem;
+width: 15rem;
+}
+@media only screen and (max-width:768px) {
+  .right,.left4{
+    height: 3rem;
+    width:20rem;
+  }
+  .left,.left2,.left3{
+height: 2.9rem;
+width: 15rem;
+  }
+}}
