@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+<!--       first name dep    -->
         <div class="main">
 
             <div class="top">
@@ -35,24 +36,38 @@
               
               <legend>🛑 Your Basic Info</legend>
             
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="user_name">
-            
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="user_fname">
+                 <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="user_lname">
+              <label for="name">Jntu:</label>
+              <input type="text" id="jntu" name="user_jntu">
               <label for="email">Email:</label>
               <input type="email" id="mail" name="user_email">
               <label for="user_tel">Contact number</label>
               <input type="tel" id="phone" name="user_tel">
-              <label for="job">Section</label>
+              
+              <label for="dept">Department</label>
               <select id="job" name="user_job">
                 <optgroup label="Select ">
-                  <option value="2csea">II CSE A</option>
-                  <option value="2cseb">II CSE B</option>
-                  <option value="2csec">II CSE C</option>
-                  <option value="2ita">II IT A</option>
-                  <option value="2itb">II IT B</option>
+                  <option value="cse">CSE</option>
+               
+                  <option value="it">IT</option>
+                 
                     </optgroup>
                
               </select>
+              <label for="sec">Section</label>
+              <select id="sec" name="user_sec">
+                <optgroup label="Select ">
+                  <option value="a">A</option>
+                  <option value="b">B</option>
+                  <option value="c">C</option>
+            
+                    </optgroup>
+               
+              </select>
+                
               <label for="student"> Day Scholar/Hosteller</label>
 
               <select id="student" name="user_h">
